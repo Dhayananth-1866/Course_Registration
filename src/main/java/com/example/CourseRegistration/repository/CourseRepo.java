@@ -1,0 +1,7 @@
+package com.example.CourseRegistration.repository;
+
+import com.example.CourseRegistration.model.Courses;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CourseRepo extends JpaRepository<Courses,String> {
+}
