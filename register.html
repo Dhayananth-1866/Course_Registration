@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Register a Course</title>
+    </head>
+
+    <style>
+        body{
+            background-color: white;
+            text-align: center;
+        }
+
+        form{
+            margin: auto;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        input,select,button{
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button{
+                background-color: rgb(24, 168, 24);
+                color: white;
+                padding: 20px 20px;
+                border-radius: 5px;
+                font-size: 17px;
+            }
+            button:hover{
+                background-color: rgb(3, 110, 3);
+                cursor: pointer;
+            }
+
+            h1{
+                color:  rgb(24, 168, 24);
+            }
+
+    </style>
+    <body>
+        <h1>Elavate Your Role..</h1>
+
+        <form action="http://localhost:8080/courses/register" method="post">
+              <label for="name" >Enter your name:</label><br>
+        <input name="name" type="text"><br><br>
+
+        
+        <label for="email" >Enter your email:</label><br>
+        <input name="emailId" type="email"><br><br>
+
+        
+        <label for="course" >Select your Course:</label><br>
+        <select id="course" name="courseName" >
+            <option value="SpringBoot">SpringBoot</option>
+            <option value="C programming">C programming</option>
+            <option value="Computer networks">Computer networks</option>
+            <option value="Python for ML">Python for ML</option>
+            <option value="java programming">Java Essentials</option>
+
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        </form>
+
+      
+
+    
+
+
+    </body>
+</html>
